@@ -112,10 +112,24 @@ export const projects: ProjectItem[] = [
 
 export const education: EducationItem[] = [
   {
-    institution: "Universidad Nacional",
-    degree: { en: "Systems Engineering", es: "Ingeniería de Sistemas" },
-    startDate: "2016",
-    endDate: "2021",
+    logo: "/UIS.jpg",
+    institution: "Universidad Industrial de Santander",
+    degree: {
+      en: "Bachelor of Systems Engineering",
+      es: "Pregrado en Ingeniería de Sistemas",
+    },
+    startDate: "02/2019",
+    endDate: "09/2025",
+  },
+  {
+    logo: "/OU.jpeg",
+    institution: "University of Oklahoma",
+    degree: {
+      en: "Academic Exchange in Computer Science",
+      es: "Intercambio Académico en Ciencias de la Computación",
+    },
+    startDate: "08/2023",
+    endDate: "12/2023",
   },
 ];
 

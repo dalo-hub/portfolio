@@ -29,11 +29,11 @@ export default function GridBackground() {
 
       const isDark = theme === "dark";
       const lineColor = isDark
-        ? "rgba(14, 165, 233, 0.08)"
-        : "rgba(2, 132, 199, 0.07)";
+        ? "rgba(34, 197, 94, 0.08)"
+        : "rgba(22, 163, 74, 0.07)";
       const dotColor = isDark
-        ? "rgba(14, 165, 233, 0.2)"
-        : "rgba(2, 132, 199, 0.15)";
+        ? "rgba(34, 197, 94, 0.2)"
+        : "rgba(22, 163, 74, 0.15)";
 
       offset = (offset + speed) % cellSize;
 

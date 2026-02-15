@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "../hooks/useTranslation.ts";
+import { LogoFull } from "./Logo.tsx";
 import ParticleNetwork from "./ParticleNetwork.tsx";
 import "../styles/components/hero.css";
 
@@ -10,11 +11,19 @@ export default function Hero() {
     <section className="hero" id="hero">
       <ParticleNetwork />
       <div className="hero__content">
+        <motion.div
+          className="hero__logo"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
+          <LogoFull className="hero__logo-svg" />
+        </motion.div>
         <motion.p
           className="hero__greeting"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
         >
           {t.hero.greeting}
         </motion.p>
@@ -22,7 +31,7 @@ export default function Hero() {
           className="hero__name"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
         >
           {t.hero.name}
         </motion.h1>
@@ -30,7 +39,7 @@ export default function Hero() {
           className="hero__role"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
+          transition={{ delay: 0.9, duration: 0.5 }}
         >
           {t.hero.role}
         </motion.p>
@@ -38,7 +47,7 @@ export default function Hero() {
           className="hero__subtitle"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.5 }}
+          transition={{ delay: 1.1, duration: 0.5 }}
         >
           {t.hero.subtitle}
         </motion.p>
@@ -46,7 +55,7 @@ export default function Hero() {
           className="hero__buttons"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.5 }}
+          transition={{ delay: 1.3, duration: 0.5 }}
         >
           <a href="#projects" className="hero__btn hero__btn--primary">
             {t.hero.cta}

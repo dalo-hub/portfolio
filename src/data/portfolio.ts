@@ -35,7 +35,7 @@ export interface SkillCategory {
 
 export const experience: ExperienceItem[] = [
   {
-    logo: "/companies/DTIC.jpeg",
+    logo: "/images/companies/DTIC.jpeg",
     company: "DTIC UIS",
     role: {
       en: "Frontend Engineer",
@@ -59,7 +59,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    logo: "/companies/APL.jpeg",
+    logo: "/images/companies/APL.jpeg",
     company: "APL Ingeniería ltda",
     role: {
       en: "System Engineering Intern",
@@ -97,7 +97,7 @@ export const projects: ProjectItem[] = [
 
 export const education: EducationItem[] = [
   {
-    logo: "/UIS.jpg",
+    logo: "/images/education/UIS.jpg",
     institution: "Universidad Industrial de Santander",
     degree: {
       en: "Bachelor of Systems Engineering",
@@ -110,7 +110,7 @@ export const education: EducationItem[] = [
     honors: [{ en: "Cum Laude", es: "Cum Laude" }],
   },
   {
-    logo: "/OU.jpeg",
+    logo: "/images/education/OU.jpeg",
     institution: "University of Oklahoma",
     degree: {
       en: "Academic Exchange in Computer Science",

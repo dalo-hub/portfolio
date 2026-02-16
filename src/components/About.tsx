@@ -9,7 +9,11 @@ export default function About() {
     <Section id="about" title={t.about.title}>
       <div className="about">
         <div className="about__photo">
-          <div className="about__photo-placeholder">DL</div>
+          <img
+            src="/images/Daniel.jpeg"
+            alt="Daniel Alejandro León Ortiz"
+            className="about__photo-img"
+          />
         </div>
         <div className="about__text">
           <p>{t.about.p1}</p>

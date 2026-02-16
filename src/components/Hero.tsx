@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "../hooks/useTranslation.ts";
 import "../styles/components/hero.css";
-import { LogoFull } from "./Logo.tsx";
+import { LogoIcon } from "./Logo.tsx";
 import ParticleNetwork from "./ParticleNetwork.tsx";
 
+const cvByLang: Record<string, string> = {
+  en: "/cv/CV_EN.pdf",
+  es: "/cv/CV_ES.pdf",
+};
+
 export default function Hero() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
 
   return (
     <section className="hero" id="hero">
@@ -17,7 +22,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          <LogoFull className="hero__logo-svg" />
+          <LogoIcon className="hero__logo-svg" />
         </motion.div>
         <motion.p
           className="hero__greeting"
@@ -57,14 +62,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.3, duration: 0.5 }}
         >
-          <a href="#projects" className="hero__btn hero__btn--primary">
-            {t.hero.cta}
-          </a>
-          <a href="#contact" className="hero__btn hero__btn--secondary">
+          <a href="#contact" className="hero__btn hero__btn--primary">
             {t.hero.contact}
           </a>
           <a
-            href="/cv.pdf"
+            href={cvByLang[lang] ?? cvByLang.en}
             target="_blank"
             rel="noopener noreferrer"
             className="hero__btn hero__btn--outline"

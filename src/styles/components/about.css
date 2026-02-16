@@ -7,22 +7,16 @@
   margin: 0 auto;
 }
 
-.about__photo-placeholder {
+.about__photo {
+  flex-shrink: 0;
+}
+
+.about__photo-img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-primary-hover)
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: white;
-  flex-shrink: 0;
+  object-fit: cover;
+  border: 3px solid var(--color-primary);
 }
 
 .about__text {

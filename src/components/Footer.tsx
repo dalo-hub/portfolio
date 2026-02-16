@@ -1,6 +1,6 @@
 import { useTranslation } from "../hooks/useTranslation.ts";
 import "../styles/components/footer.css";
-import { LogoIcon } from "./Logo.tsx";
+import { LogoFull } from "./Logo.tsx";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -9,8 +9,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__brand">
-          <LogoIcon className="footer__logo" />
-          <span>dalodev</span>
+          <LogoFull className="footer__logo" />
         </div>
         <p className="footer__text">
           {t.footer.author} &middot; &copy; {new Date().getFullYear()}{" "}

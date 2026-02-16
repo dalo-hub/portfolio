@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "../hooks/useTranslation.ts";
 import ThemeToggle from "./ThemeToggle.tsx";
-import { LogoIcon } from "./Logo.tsx";
+import { LogoFull } from "./Logo.tsx";
 import "../styles/components/navbar.css";
 
 const sections = [
@@ -31,8 +31,7 @@ export default function Navbar() {
           href="#"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <LogoIcon className="navbar__logo" />
-          <span>dalodev</span>
+          <LogoFull className="navbar__logo" />
         </a>
 
         <div className="navbar__links">

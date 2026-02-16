@@ -23,82 +23,67 @@ export interface EducationItem {
   degree: { en: string; es: string };
   startDate: string;
   endDate: string;
+  website?: string;
+  gpa?: string;
+  honors?: { en: string; es: string }[];
 }
 
 export interface SkillCategory {
-  key: "frontend" | "backend" | "tools" | "other";
+  key: "frontend" | "backend" | "tools";
   items: string[];
 }
 
 export const experience: ExperienceItem[] = [
   {
-    company: "Tech Company",
+    logo: "/companies/DTIC.jpeg",
+    company: "DTIC UIS",
     role: {
-      en: "Senior Frontend Developer",
-      es: "Desarrollador Frontend Senior",
+      en: "Frontend Engineer",
+      es: "Ingeniero Frontend",
     },
-    startDate: "2023-01",
+    startDate: "2022-03",
     endDate: null,
     description: {
-      en: "Leading frontend architecture and developing scalable web applications using React and TypeScript. Mentoring junior developers and establishing best practices.",
-      es: "Liderando la arquitectura frontend y desarrollando aplicaciones web escalables con React y TypeScript. Mentoreando desarrolladores junior y estableciendo buenas prácticas.",
+      en: "Developing and maintaining mission-critical university platforms in a Scrum environment. Built the admissions frontend serving 20,000+ students per semester, designed reusable Angular Material components across multiple institutional modules, and implemented unit testing with Karma and Jasmine.",
+      es: "Desarrollo y mantenimiento de plataformas universitarias críticas en un entorno Scrum. Construí el frontend del proceso de admisiones que atiende a más de 20.000 estudiantes por semestre, diseñé componentes reutilizables con Angular Material en múltiples módulos institucionales e implementé pruebas unitarias con Karma y Jasmine.",
     },
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+    technologies: [
+      "Angular",
+      "TypeScript",
+      "Angular Material",
+      "SASS",
+      "REST APIs",
+      "RxJS",
+      "Karma",
+      "Jasmine",
+    ],
   },
   {
-    company: "Digital Agency",
-    role: { en: "Frontend Developer", es: "Desarrollador Frontend" },
-    startDate: "2021-06",
-    endDate: "2022-12",
-    description: {
-      en: "Built responsive web applications and interactive user interfaces for various clients. Collaborated with designers and backend teams to deliver pixel-perfect implementations.",
-      es: "Construí aplicaciones web responsivas e interfaces de usuario interactivas para varios clientes. Colaboré con diseñadores y equipos de backend para entregar implementaciones pixel-perfect.",
+    logo: "/companies/APL.jpeg",
+    company: "APL Ingeniería ltda",
+    role: {
+      en: "System Engineering Intern",
+      es: "Practicante de Ingeniería de Sistemas",
     },
-    technologies: ["React", "JavaScript", "SASS", "REST APIs"],
-  },
-  {
-    company: "Startup Inc.",
-    role: { en: "Junior Web Developer", es: "Desarrollador Web Junior" },
-    startDate: "2020-01",
-    endDate: "2021-05",
+    startDate: "2024-11",
+    endDate: "2025-04",
     description: {
-      en: "Developed and maintained web applications using modern JavaScript frameworks. Participated in code reviews and agile ceremonies.",
-      es: "Desarrollé y mantuve aplicaciones web usando frameworks modernos de JavaScript. Participé en revisiones de código y ceremonias ágiles.",
+      en: "Developed a web platform for performance indicator analysis and visualization using Scrumban methodology. Led the frontend implementation of authentication, user/role management, and interactive data dashboards. Wrote unit and component tests with Vitest, Jest, and Testing Library.",
+      es: "Desarrollé una plataforma web para análisis y visualización de indicadores de desempeño bajo la metodología Scrumban. Lideré la implementación frontend de autenticación, gestión de usuarios/roles y dashboards interactivos. Escribí pruebas unitarias y de componentes con Vitest, Jest y Testing Library.",
     },
-    technologies: ["Vue.js", "JavaScript", "CSS", "Node.js"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Vitest",
+      "Jest",
+      "Testing Library",
+    ],
   },
 ];
 
 export const projects: ProjectItem[] = [
-  {
-    title: "E-Commerce Platform",
-    description: {
-      en: "A full-featured e-commerce platform with cart management, payment integration, and admin dashboard.",
-      es: "Una plataforma de e-commerce completa con gestión de carrito, integración de pagos y panel de administración.",
-    },
-    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-    github: "https://github.com/dalodev",
-    live: "https://dalodev.com",
-  },
-  {
-    title: "Task Management App",
-    description: {
-      en: "A collaborative task management tool with real-time updates, drag-and-drop boards, and team features.",
-      es: "Una herramienta colaborativa de gestión de tareas con actualizaciones en tiempo real, tableros drag-and-drop y funciones de equipo.",
-    },
-    technologies: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
-    github: "https://github.com/dalodev",
-  },
-  {
-    title: "Weather Dashboard",
-    description: {
-      en: "A beautiful weather dashboard with location search, 7-day forecasts, and interactive charts.",
-      es: "Un hermoso panel de clima con búsqueda por ubicación, pronósticos de 7 días y gráficos interactivos.",
-    },
-    technologies: ["React", "Chart.js", "OpenWeather API", "CSS Modules"],
-    github: "https://github.com/dalodev",
-    live: "https://dalodev.com",
-  },
   {
     title: "Portfolio Website",
     description: {
@@ -106,7 +91,7 @@ export const projects: ProjectItem[] = [
       es: "Este portafolio construido con React, TypeScript y Framer Motion. Con i18n, modo oscuro y animaciones de partículas.",
     },
     technologies: ["React", "TypeScript", "Framer Motion", "Canvas API"],
-    github: "https://github.com/dalodev",
+    github: "https://github.com/dalo-hub/portfolio",
   },
 ];
 
@@ -120,6 +105,9 @@ export const education: EducationItem[] = [
     },
     startDate: "02/2019",
     endDate: "09/2025",
+    website: "https://uis.edu.co",
+    gpa: "4.57/5.0",
+    honors: [{ en: "Cum Laude", es: "Cum Laude" }],
   },
   {
     logo: "/OU.jpeg",
@@ -130,6 +118,8 @@ export const education: EducationItem[] = [
     },
     startDate: "08/2023",
     endDate: "12/2023",
+    website: "https://ou.edu",
+    gpa: "3.75/4.0",
   },
 ];
 
@@ -137,46 +127,43 @@ export const skills: SkillCategory[] = [
   {
     key: "frontend",
     items: [
-      "React",
-      "TypeScript",
-      "JavaScript",
-      "Next.js",
       "HTML5",
       "CSS3",
-      "SASS",
-      "Framer Motion",
       "Tailwind CSS",
+      "SASS",
+      "Shadcn UI",
     ],
   },
   {
     key: "backend",
     items: [
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "MongoDB",
-      "REST APIs",
-      "GraphQL",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Angular",
+      "React Router",
+      "Axios",
     ],
   },
   {
     key: "tools",
-    items: ["Git", "Docker", "CI/CD", "Vite", "Webpack", "Jest", "Linux"],
-  },
-  {
-    key: "other",
     items: [
-      "Figma",
-      "Agile/Scrum",
-      "Responsive Design",
-      "Accessibility",
-      "SEO",
+      "Git",
+      "GitHub",
+      "GitLab",
+      "NPM",
+      "PNPM",
+      "Bun",
+      "Vite",
+      "Prettier",
+      "Vitest",
+      "Vercel",
     ],
   },
 ];
 
 export const social = {
-  github: "https://github.com/dalodev",
+  github: "https://github.com/dalo-hub",
   linkedin: "https://linkedin.com/in/dalodev",
-  email: "daniel@dalodev.com",
+  email: "dalodev@proton.me",
 };

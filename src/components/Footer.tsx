@@ -8,12 +8,12 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner">
-        <div>
-          <LogoIcon className="navbar__logo" />
+        <div className="footer__brand">
+          <LogoIcon className="footer__logo" />
           <span>dalodev</span>
         </div>
         <p className="footer__text">
-          {t.footer.built} &middot; &copy; {new Date().getFullYear()}{" "}
+          {t.footer.author} &middot; &copy; {new Date().getFullYear()}{" "}
           {t.footer.rights}
         </p>
       </div>

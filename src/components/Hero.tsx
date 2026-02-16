@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "../hooks/useTranslation.ts";
+import "../styles/components/hero.css";
 import { LogoFull } from "./Logo.tsx";
 import ParticleNetwork from "./ParticleNetwork.tsx";
-import "../styles/components/hero.css";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -62,6 +62,26 @@ export default function Hero() {
           </a>
           <a href="#contact" className="hero__btn hero__btn--secondary">
             {t.hero.contact}
+          </a>
+          <a
+            href="/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero__btn hero__btn--outline"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M8 2v9M4 8l4 4 4-4M2 14h12" />
+            </svg>
+            {t.hero.cv}
           </a>
         </motion.div>
       </div>

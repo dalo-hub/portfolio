@@ -1,6 +1,6 @@
 import { useTranslation } from "../hooks/useTranslation.ts";
-import Section from "./Section.tsx";
 import "../styles/components/about.css";
+import Section from "./Section.tsx";
 
 export default function About() {
   const { t } = useTranslation();

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "../hooks/useTranslation.ts";
-import { experience } from "../data/portfolio.ts";
-import Section from "./Section.tsx";
 import type { Lang } from "../context/langContextValue.ts";
+import { experience } from "../data/portfolio.ts";
+import { useTranslation } from "../hooks/useTranslation.ts";
 import "../styles/components/experience.css";
+import Section from "./Section.tsx";
 
 export default function Experience() {
   const { t, lang } = useTranslation();
@@ -34,15 +34,11 @@ export default function Experience() {
                   <span className="timeline__date">
                     {item.startDate} — {item.endDate ?? t.experience.present}
                   </span>
-                  <h3 className="timeline__role">
-                    {item.role[lang as Lang]}
-                  </h3>
+                  <h3 className="timeline__role">{item.role[lang as Lang]}</h3>
                   <h4 className="timeline__company">{item.company}</h4>
                 </div>
               </div>
-              <p className="timeline__desc">
-                {item.description[lang as Lang]}
-              </p>
+              <p className="timeline__desc">{item.description[lang as Lang]}</p>
               <div className="timeline__tags">
                 {item.technologies.map((tech) => (
                   <span key={tech} className="tag">

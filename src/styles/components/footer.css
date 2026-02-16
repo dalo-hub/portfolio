@@ -14,10 +14,20 @@
   text-align: center;
 }
 
+.footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
 .footer__logo {
-  height: 32px;
+  height: 24px;
   width: auto;
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .footer__text {

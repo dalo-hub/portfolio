@@ -15,11 +15,12 @@ export const en = {
       "Building modern, performant web experiences with clean code and great design.",
     cta: "View My Work",
     contact: "Get in Touch",
+    cv: "Get CV",
   },
   about: {
     title: "About Me",
-    p1: "I'm a systems engineer passionate about crafting modern web applications. With a strong foundation in frontend development, I specialize in building responsive, accessible, and performant user interfaces.",
-    p2: "I love turning complex problems into simple, elegant solutions. When I'm not coding, you'll find me exploring new technologies and contributing to open-source projects.",
+    p1: "I'm Daniel Alejandro León Ortiz, a Systems Engineer focused on building scalable web applications that balance architectural integrity with high-performance user experiences. I approach frontend development with a rigorous engineering mindset, prioritizing maintainable code, comprehensive testing, and sustainable component structures.",
+    p2: "I specialize in translating complex business requirements into intuitive digital solutions while maintaining a quality-first approach throughout the software development lifecycle. I thrive in agile environments where technical excellence and system reliability are the core priorities.",
   },
   experience: {
     title: "Experience",
@@ -32,13 +33,13 @@ export const en = {
   },
   education: {
     title: "Education",
+    gpa: "GPA",
   },
   skills: {
     title: "Skills",
-    frontend: "Frontend",
-    backend: "Backend",
-    tools: "Tools & DevOps",
-    other: "Other",
+    frontend: "Structure & Styling",
+    backend: "Frameworks & Languages",
+    tools: "Development & Workflow",
   },
   contact: {
     title: "Get in Touch",
@@ -47,7 +48,7 @@ export const en = {
     email: "Send Email",
   },
   footer: {
-    built: "Built with React & TypeScript",
+    author: "Daniel Alejandro León Ortiz",
     rights: "All rights reserved.",
   },
 };
@@ -68,18 +69,18 @@ export interface Translations {
     subtitle: string;
     cta: string;
     contact: string;
+    cv: string;
   };
   about: { title: string; p1: string; p2: string };
   experience: { title: string; present: string };
   projects: { title: string; viewCode: string; viewLive: string };
-  education: { title: string };
+  education: { title: string; gpa: string };
   skills: {
     title: string;
     frontend: string;
     backend: string;
     tools: string;
-    other: string;
   };
   contact: { title: string; subtitle: string; email: string };
-  footer: { built: string; rights: string };
+  footer: { author: string; rights: string };
 }

@@ -17,11 +17,12 @@ export const es: Translations = {
       "Construyendo experiencias web modernas y eficientes con código limpio y buen diseño.",
     cta: "Ver Mi Trabajo",
     contact: "Contáctame",
+    cv: "Descargar CV",
   },
   about: {
     title: "Sobre Mí",
-    p1: "Soy ingeniero de sistemas apasionado por crear aplicaciones web modernas. Con una sólida base en desarrollo frontend, me especializo en construir interfaces de usuario responsivas, accesibles y de alto rendimiento.",
-    p2: "Me encanta convertir problemas complejos en soluciones simples y elegantes. Cuando no estoy programando, me encontrarás explorando nuevas tecnologías y contribuyendo a proyectos de código abierto.",
+    p1: "Soy Daniel Alejandro León Ortiz, Ingeniero de Sistemas enfocado en construir aplicaciones web escalables que equilibran la integridad arquitectónica con experiencias de usuario de alto rendimiento. Abordo el desarrollo frontend con una mentalidad de ingeniería rigurosa, priorizando código mantenible, pruebas exhaustivas y estructuras de componentes sostenibles.",
+    p2: "Me especializo en traducir requisitos de negocio complejos en soluciones digitales intuitivas, manteniendo un enfoque de calidad ante todo a lo largo del ciclo de vida del desarrollo de software. Prospero en entornos ágiles donde la excelencia técnica y la confiabilidad del sistema son las prioridades fundamentales.",
   },
   experience: {
     title: "Experiencia",
@@ -34,13 +35,13 @@ export const es: Translations = {
   },
   education: {
     title: "Educación",
+    gpa: "GPA",
   },
   skills: {
     title: "Habilidades",
-    frontend: "Frontend",
-    backend: "Backend",
-    tools: "Herramientas & DevOps",
-    other: "Otros",
+    frontend: "Estructura & Estilos",
+    backend: "Frameworks & Lenguajes",
+    tools: "Desarrollo & Flujo de Trabajo",
   },
   contact: {
     title: "Contacto",

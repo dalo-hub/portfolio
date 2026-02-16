@@ -60,6 +60,16 @@
   line-height: 1.7;
 }
 
+.hero__logo {
+  margin-bottom: 1.5rem;
+}
+
+.hero__logo-svg {
+  height: clamp(2.5rem, 6vw, 4rem);
+  width: auto;
+  color: var(--color-primary);
+}
+
 .hero__buttons {
   display: flex;
   gap: 1rem;
@@ -97,6 +107,19 @@
 
 .hero__btn--secondary:hover {
   border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.hero__btn--outline {
+  border: 1px dashed var(--color-border);
+  color: var(--color-text-secondary);
+  gap: 0.5rem;
+}
+
+.hero__btn--outline:hover {
+  border-color: var(--color-primary);
+  border-style: solid;
   color: var(--color-primary);
   transform: translateY(-1px);
 }

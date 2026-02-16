@@ -79,5 +79,5 @@ export default function GridBackground() {
     };
   }, [theme]);
 
-  return <canvas ref={canvasRef} className="particle-canvas" />;
+  return <canvas ref={canvasRef} className="particle-canvas" aria-hidden="true" />;
 }

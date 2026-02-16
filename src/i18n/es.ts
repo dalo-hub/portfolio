@@ -50,7 +50,7 @@ export const es: Translations = {
     email: "Enviar Email",
   },
   footer: {
-    built: "Hecho con React & TypeScript",
+    author: "Daniel Alejandro León Ortiz",
     rights: "Todos los derechos reservados.",
   },
 };

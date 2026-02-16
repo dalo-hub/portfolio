@@ -1,73 +1,61 @@
-# React + TypeScript + Vite
+# dalodev — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Daniel Alejandro León Ortiz. Built with React, TypeScript, Vite, and Framer Motion.
 
-Currently, two official plugins are available:
+**Live:** [dalo.dev](https://dalo.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- **React 19** + **TypeScript** — UI and type safety
+- **Vite** (SWC) — build tooling and dev server
+- **Framer Motion** — entrance animations and staggered reveals
+- **Canvas API** — animated grid background
+- **CSS Variables** — hand-written styles with dark/light theming
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Features
 
-## Expanding the ESLint configuration
+- Dark / light theme (persisted to localStorage)
+- English / Spanish i18n (detects browser language)
+- Responsive design (mobile-first, 768px breakpoint)
+- Animated section reveals with viewport detection
+- SEO optimized (Open Graph, Twitter Cards, JSON-LD structured data)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+# Install dependencies
+bun install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Start dev server
+bun run dev
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Build for production
+bun run build
+
+# Preview production build
+bun run preview
+
+# Lint
+bun run lint
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── components/     # React components
+├── context/        # ThemeProvider, LangProvider
+├── data/           # Portfolio content and skill icons
+├── hooks/          # useTheme, useLang, useTranslation
+├── i18n/           # Translation files (en.ts, es.ts)
+└── styles/         # CSS variables, component styles
+public/
+├── favicons/       # Favicon assets
+├── images/         # Profile photo, logos, OG image
+├── robots.txt      # Crawler rules
+└── sitemap.xml     # Sitemap for search engines
+```
+
+## License
+
+All rights reserved.

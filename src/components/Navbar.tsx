@@ -1,9 +1,9 @@
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "../hooks/useTranslation.ts";
-import ThemeToggle from "./ThemeToggle.tsx";
-import { LogoFull } from "./Logo.tsx";
 import "../styles/components/navbar.css";
+import { LogoFull } from "./Logo.tsx";
+import ThemeToggle from "./ThemeToggle.tsx";
 
 const sections = [
   "about",
@@ -20,7 +20,9 @@ export default function Navbar() {
 
   const handleNavClick = (id: string) => {
     setMenuOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
   };
 
   return (
@@ -74,7 +76,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.1 }}
           >
             {sections.map((s) => (
               <button

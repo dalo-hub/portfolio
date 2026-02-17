@@ -38,13 +38,14 @@ export default function Navbar() {
 
         <div className="navbar__links">
           {sections.map((s) => (
-            <button
+            <a
               key={s}
+              href={`#${s}`}
               className="navbar__link"
               onClick={() => handleNavClick(s)}
             >
               {t.nav[s]}
-            </button>
+            </a>
           ))}
         </div>
 
@@ -79,13 +80,14 @@ export default function Navbar() {
             transition={{ duration: 0.1 }}
           >
             {sections.map((s) => (
-              <button
+              <a
                 key={s}
+                href={`#${s}`}
                 className="navbar__mobile-link"
                 onClick={() => handleNavClick(s)}
               >
                 {t.nav[s]}
-              </button>
+              </a>
             ))}
           </motion.div>
         )}

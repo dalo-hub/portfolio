@@ -1,5 +1,6 @@
 import { ThemeProvider } from "./context/ThemeContext.tsx";
 import { LangProvider } from "./context/LangContext.tsx";
+import TitleManager from "./components/TitleManager.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Hero from "./components/Hero.tsx";
 import About from "./components/About.tsx";
@@ -14,6 +15,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <LangProvider>
+        <TitleManager />
         <Navbar />
         <main>
           <Hero />

@@ -1,4 +1,5 @@
 export const en = {
+  pageTitle: "Daniel León's Portfolio",
   nav: {
     about: "About",
     experience: "Experience",
@@ -54,6 +55,7 @@ export const en = {
 };
 
 export interface Translations {
+  pageTitle: string;
   nav: {
     about: string;
     experience: string;

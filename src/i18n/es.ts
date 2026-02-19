@@ -1,6 +1,7 @@
 import type { Translations } from "./en.ts";
 
 export const es: Translations = {
+  pageTitle: "Portafolio de Daniel León",
   nav: {
     about: "Sobre mí",
     experience: "Experiencia",

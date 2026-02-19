@@ -29,16 +29,13 @@ export default function GridBackground() {
 
       const isDark = theme === "dark";
       const lineColor = isDark
-        ? "rgba(34, 197, 94, 0.08)"
-        : "rgba(22, 163, 74, 0.07)";
-      const dotColor = isDark
-        ? "rgba(34, 197, 94, 0.2)"
-        : "rgba(22, 163, 74, 0.15)";
+        ? "rgba(34, 197, 94, 0.15)"
+        : "rgba(22, 163, 74, 0.12)";
 
       offset = (offset + speed) % cellSize;
 
       ctx.strokeStyle = lineColor;
-      ctx.lineWidth = 0.5;
+      ctx.lineWidth = 1;
 
       const startX = -offset;
       for (let x = startX; x <= w + cellSize; x += cellSize) {
@@ -53,15 +50,6 @@ export default function GridBackground() {
         ctx.moveTo(0, y);
         ctx.lineTo(w, y);
         ctx.stroke();
-      }
-
-      ctx.fillStyle = dotColor;
-      for (let x = startX; x <= w + cellSize; x += cellSize) {
-        for (let y = 0; y <= h; y += cellSize) {
-          ctx.beginPath();
-          ctx.arc(x, y, 1.5, 0, Math.PI * 2);
-          ctx.fill();
-        }
       }
 
       animationId = requestAnimationFrame(draw);
@@ -79,5 +67,7 @@ export default function GridBackground() {
     };
   }, [theme]);
 
-  return <canvas ref={canvasRef} className="particle-canvas" aria-hidden="true" />;
+  return (
+    <canvas ref={canvasRef} className="particle-canvas" aria-hidden="true" />
+  );
 }

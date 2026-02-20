@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="navbar__inner">
         <a
           className="navbar__brand"
-          href="/"
+          href="#"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <LogoFull className="navbar__logo" />

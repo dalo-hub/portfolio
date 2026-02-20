@@ -20,6 +20,20 @@ export default function Education() {
             viewport={{ once: true }}
             transition={{ delay: i * 0.15, duration: 0.5 }}
           >
+            <div className="education-card__cover">
+              {item.coverImage ? (
+                <img
+                  src={item.coverImage}
+                  alt=""
+                  className="education-card__cover-img"
+                  style={{ objectPosition: item.coverImagePosition ?? "center center" }}
+                  aria-hidden="true"
+                />
+              ) : (
+                <div className="education-card__cover-placeholder" aria-hidden="true" />
+              )}
+            </div>
+
             <div className="education-card__avatar">
               {item.logo ? (
                 <img src={item.logo} alt={item.institution} />
@@ -27,7 +41,8 @@ export default function Education() {
                 <span>{item.institution.charAt(0)}</span>
               )}
             </div>
-            <div>
+
+            <div className="education-card__body">
               <h3 className="education-card__degree">
                 {item.degree[lang as Lang]}
               </h3>

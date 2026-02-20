@@ -20,6 +20,8 @@ export interface ProjectItem {
 export interface EducationItem {
   institution: string;
   logo?: string;
+  coverImage?: string;
+  coverImagePosition?: string;
   degree: { en: string; es: string };
   startDate: string;
   endDate: string;
@@ -98,6 +100,8 @@ export const projects: ProjectItem[] = [
 export const education: EducationItem[] = [
   {
     logo: "/images/education/UIS.jpg",
+    coverImage: "/images/education/uis-cover.jpg",
+    coverImagePosition: "center 30%",
     institution: "Universidad Industrial de Santander",
     degree: {
       en: "Bachelor of Systems Engineering",
@@ -111,6 +115,8 @@ export const education: EducationItem[] = [
   },
   {
     logo: "/images/education/OU.jpeg",
+    coverImage: "/images/education/ou-cover.jpg",
+    coverImagePosition: "center center",
     institution: "University of Oklahoma",
     degree: {
       en: "Academic Exchange in Computer Science",

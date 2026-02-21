@@ -2,6 +2,7 @@
   border-top: 1px solid var(--color-border);
   padding: 2rem 1.5rem;
   margin-top: 2rem;
+  transition: border-color var(--transition-base);
 }
 
 .footer__inner {

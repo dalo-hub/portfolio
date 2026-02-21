@@ -8,7 +8,9 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
-  transition: background-color var(--transition-base);
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base);
 }
 
 .navbar__inner {

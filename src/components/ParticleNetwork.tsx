@@ -4,6 +4,11 @@ import { useTheme } from "../hooks/useTheme.ts";
 export default function GridBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { theme } = useTheme();
+  const themeRef = useRef(theme);
+
+  useEffect(() => {
+    themeRef.current = theme;
+  }, [theme]);
 
   useEffect(() => {
     const cvs = canvasRef.current;
@@ -27,7 +32,7 @@ export default function GridBackground() {
       const h = cvs.offsetHeight;
       ctx.clearRect(0, 0, w, h);
 
-      const isDark = theme === "dark";
+      const isDark = themeRef.current === "dark";
       const lineColor = isDark
         ? "rgba(34, 197, 94, 0.15)"
         : "rgba(22, 163, 74, 0.12)";
@@ -65,7 +70,7 @@ export default function GridBackground() {
       cancelAnimationFrame(animationId);
       window.removeEventListener("resize", handleResize);
     };
-  }, [theme]);
+  }, []);
 
   return (
     <canvas ref={canvasRef} className="particle-canvas" aria-hidden="true" />

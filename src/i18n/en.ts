@@ -39,7 +39,7 @@ export const en = {
   skills: {
     title: "Skills",
     frontend: "Structure & Styling",
-    backend: "Frameworks & Languages",
+    languages: "Frameworks & Languages",
     tools: "Development & Workflow",
   },
   contact: {
@@ -80,7 +80,7 @@ export interface Translations {
   skills: {
     title: string;
     frontend: string;
-    backend: string;
+    languages: string;
     tools: string;
   };
   contact: { title: string; subtitle: string; email: string };

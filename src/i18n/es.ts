@@ -41,7 +41,7 @@ export const es: Translations = {
   skills: {
     title: "Habilidades",
     frontend: "Estructura & Estilos",
-    backend: "Frameworks & Lenguajes",
+    languages: "Frameworks & Lenguajes",
     tools: "Desarrollo & Flujo de Trabajo",
   },
   contact: {

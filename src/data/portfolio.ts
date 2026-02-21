@@ -31,7 +31,7 @@ export interface EducationItem {
 }
 
 export interface SkillCategory {
-  key: "frontend" | "backend" | "tools";
+  key: "frontend" | "languages" | "tools";
   items: string[];
 }
 
@@ -141,7 +141,7 @@ export const skills: SkillCategory[] = [
     ],
   },
   {
-    key: "backend",
+    key: "languages",
     items: [
       "JavaScript",
       "TypeScript",

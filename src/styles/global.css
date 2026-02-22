@@ -69,6 +69,24 @@ ol {
   outline-offset: 2px;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 var(--radius-sm) 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  z-index: 9999;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* Section base */
 .section {
   padding: var(--section-padding);

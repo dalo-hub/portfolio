@@ -13,7 +13,7 @@ export default function Projects() {
       <div className="projects-grid">
         {projects.map((project, i) => (
           <motion.div
-            key={i}
+            key={project.title}
             className="project-card"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

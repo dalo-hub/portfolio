@@ -13,7 +13,7 @@ export default function Experience() {
       <div className="timeline">
         {experience.map((item, i) => (
           <motion.div
-            key={i}
+            key={item.company}
             className={`timeline__item ${i % 2 === 0 ? "timeline__item--left" : "timeline__item--right"}`}
             initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
             whileInView={{ opacity: 1, x: 0 }}

@@ -80,6 +80,7 @@ export default function Hero() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
+              aria-hidden="true"
             >
               <path d="M8 2v9M4 8l4 4 4-4M2 14h12" />
             </svg>

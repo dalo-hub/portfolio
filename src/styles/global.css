@@ -13,6 +13,12 @@ html {
   scroll-padding-top: var(--nav-height);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--color-bg);

@@ -20,6 +20,9 @@ export default function GridBackground() {
     let offset = 0;
     const speed = 0.3;
     const cellSize = 60;
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
 
     const resize = () => {
       cvs.width = cvs.offsetWidth * window.devicePixelRatio;
@@ -57,7 +60,9 @@ export default function GridBackground() {
         ctx.stroke();
       }
 
-      animationId = requestAnimationFrame(draw);
+      if (!prefersReducedMotion) {
+        animationId = requestAnimationFrame(draw);
+      }
     };
 
     resize();

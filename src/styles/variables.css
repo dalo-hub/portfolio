@@ -26,7 +26,7 @@
   --color-border: #262626;
   --color-text: #e5e5e5;
   --color-text-secondary: #a3a3a3;
-  --color-text-muted: #737373;
+  --color-text-muted: #888888;
   --color-primary: #22c55e;
   --color-primary-hover: #4ade80;
   --color-primary-glow: rgba(34, 197, 94, 0.15);
@@ -35,6 +35,7 @@
   --color-card-border: #262626;
   --color-tag-bg: rgba(34, 197, 94, 0.1);
   --color-tag-text: #4ade80;
+  --color-shadow: rgba(0, 0, 0, 0.4);
 }
 
 [data-theme="light"] {
@@ -44,7 +45,7 @@
   --color-border: #e5e5e5;
   --color-text: #171717;
   --color-text-secondary: #525252;
-  --color-text-muted: #a3a3a3;
+  --color-text-muted: #6b6b6b;
   --color-primary: #16a34a;
   --color-primary-hover: #15803d;
   --color-primary-glow: rgba(22, 163, 74, 0.1);
@@ -53,4 +54,5 @@
   --color-card-border: #e5e5e5;
   --color-tag-bg: rgba(22, 163, 74, 0.08);
   --color-tag-text: #16a34a;
+  --color-shadow: rgba(0, 0, 0, 0.12);
 }

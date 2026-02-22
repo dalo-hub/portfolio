@@ -10,7 +10,7 @@ const translations: Record<Lang, Translations> = { en, es };
 function getInitialLang(): Lang {
   const stored = localStorage.getItem("lang") as Lang | null;
   if (stored === "en" || stored === "es") return stored;
-  return navigator.language.startsWith("es") ? "es" : "en";
+  return navigator.languages.some((l) => l.startsWith("es")) ? "es" : "en";
 }
 
 export function LangProvider({ children }: { children: ReactNode }) {

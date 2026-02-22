@@ -13,6 +13,8 @@ export default function About() {
             src="/images/Daniel.jpeg"
             alt="Daniel Alejandro León Ortiz"
             className="about__photo-img"
+            width="140"
+            height="140"
           />
         </div>
         <div className="about__text">

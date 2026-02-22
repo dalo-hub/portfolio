@@ -28,6 +28,9 @@ export default function Education() {
                   className="education-card__cover-img"
                   style={{ objectPosition: item.coverImagePosition ?? "center center" }}
                   aria-hidden="true"
+                  loading="lazy"
+                  width="800"
+                  height="140"
                 />
               ) : (
                 <div className="education-card__cover-placeholder" aria-hidden="true" />
@@ -36,7 +39,7 @@ export default function Education() {
 
             <div className="education-card__avatar">
               {item.logo ? (
-                <img src={item.logo} alt={item.institution} />
+                <img src={item.logo} alt={item.institution} loading="lazy" width="52" height="52" />
               ) : (
                 <span>{item.institution.charAt(0)}</span>
               )}
@@ -59,6 +62,7 @@ export default function Education() {
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
+                      aria-hidden="true"
                     >
                       <path d="M3.5 1.5h7v7M10.5 1.5L1.5 10.5" />
                     </svg>

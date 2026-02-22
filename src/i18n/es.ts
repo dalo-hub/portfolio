@@ -16,7 +16,6 @@ export const es: Translations = {
     role: "Desarrollador Frontend & Ingeniero de Sistemas",
     subtitle:
       "Construyendo experiencias web modernas y eficientes con código limpio y buen diseño.",
-    cta: "Ver Mi Trabajo",
     contact: "Contáctame",
     cv: "Descargar CV",
   },

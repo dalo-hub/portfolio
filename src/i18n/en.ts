@@ -14,7 +14,6 @@ export const en = {
     role: "Frontend Developer & Systems Engineer",
     subtitle:
       "Building modern, performant web experiences with clean code and great design.",
-    cta: "View My Work",
     contact: "Get in Touch",
     cv: "Get CV",
   },
@@ -69,7 +68,6 @@ export interface Translations {
     name: string;
     role: string;
     subtitle: string;
-    cta: string;
     contact: string;
     cv: string;
   };

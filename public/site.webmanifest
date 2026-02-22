@@ -1,7 +1,10 @@
 {
   "name": "dalodev",
   "short_name": "dalodev",
+  "description": "Frontend Developer & Systems Engineer portfolio — Daniel Alejandro León Ortiz",
   "start_url": "/",
+  "scope": "/",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "/favicons/web-app-manifest-192x192-any.png",

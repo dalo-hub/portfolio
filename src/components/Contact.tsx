@@ -1,7 +1,7 @@
-import { useTranslation } from "../hooks/useTranslation.ts";
 import { social } from "../data/portfolio.ts";
-import Section from "./Section.tsx";
+import { useTranslation } from "../hooks/useTranslation.ts";
 import "../styles/components/contact.css";
+import Section from "./Section.tsx";
 
 export default function Contact() {
   const { t } = useTranslation();

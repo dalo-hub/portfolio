@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { ThemeContext } from "./themeContextValue.ts";
 import type { Theme } from "./themeContextValue.ts";
+import { ThemeContext } from "./themeContextValue.ts";
 
 function getInitialTheme(): Theme {
   const stored = localStorage.getItem("theme") as Theme | null;

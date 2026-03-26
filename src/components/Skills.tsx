@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "../hooks/useTranslation.ts";
 import { skills } from "../data/portfolio.ts";
 import { getSkillIcon } from "../data/skillIcons.ts";
-import Section from "./Section.tsx";
+import { useTranslation } from "../hooks/useTranslation.ts";
 import "../styles/components/skills.css";
+import Section from "./Section.tsx";
 
 export default function Skills() {
   const { t } = useTranslation();

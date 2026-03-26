@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "../hooks/useTranslation.ts";
-import { projects } from "../data/portfolio.ts";
-import Section from "./Section.tsx";
 import type { Lang } from "../context/langContextValue.ts";
+import { projects } from "../data/portfolio.ts";
+import { useTranslation } from "../hooks/useTranslation.ts";
 import "../styles/components/projects.css";
+import Section from "./Section.tsx";
 
 export default function Projects() {
   const { t, lang } = useTranslation();

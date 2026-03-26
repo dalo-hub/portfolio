@@ -26,20 +26,31 @@ export default function Education() {
                   src={item.coverImage}
                   alt=""
                   className="education-card__cover-img"
-                  style={{ objectPosition: item.coverImagePosition ?? "center center" }}
+                  style={{
+                    objectPosition: item.coverImagePosition ?? "center center",
+                  }}
                   aria-hidden="true"
                   loading="lazy"
                   width="800"
                   height="140"
                 />
               ) : (
-                <div className="education-card__cover-placeholder" aria-hidden="true" />
+                <div
+                  className="education-card__cover-placeholder"
+                  aria-hidden="true"
+                />
               )}
             </div>
 
             <div className="education-card__avatar">
               {item.logo ? (
-                <img src={item.logo} alt={item.institution} loading="lazy" width="52" height="52" />
+                <img
+                  src={item.logo}
+                  alt={item.institution}
+                  loading="lazy"
+                  width="52"
+                  height="52"
+                />
               ) : (
                 <span>{item.institution.charAt(0)}</span>
               )}
@@ -51,7 +62,11 @@ export default function Education() {
               </h3>
               <p className="education-card__institution">
                 {item.website ? (
-                  <a href={item.website} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={item.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {item.institution}
                     <svg
                       width="12"

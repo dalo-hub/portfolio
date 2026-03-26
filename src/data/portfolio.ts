@@ -132,13 +132,7 @@ export const education: EducationItem[] = [
 export const skills: SkillCategory[] = [
   {
     key: "frontend",
-    items: [
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
-      "SASS",
-      "Shadcn UI",
-    ],
+    items: ["HTML5", "CSS3", "Tailwind CSS", "SASS", "Shadcn UI"],
   },
   {
     key: "languages",
@@ -169,7 +163,7 @@ export const skills: SkillCategory[] = [
 ];
 
 export const social = {
-  github: "https://github.com/dalo-hub",
+  github: "https://github.com/dalo-dev",
   linkedin: "https://linkedin.com/in/dalodev",
   email: "dalodev@proton.me",
 };

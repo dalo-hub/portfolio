@@ -1,9 +1,9 @@
-import { useState, useEffect, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
+import type { Translations } from "../i18n/en.ts";
 import { en } from "../i18n/en.ts";
 import { es } from "../i18n/es.ts";
-import { LangContext } from "./langContextValue.ts";
 import type { Lang } from "./langContextValue.ts";
-import type { Translations } from "../i18n/en.ts";
+import { LangContext } from "./langContextValue.ts";
 
 const translations: Record<Lang, Translations> = { en, es };
 

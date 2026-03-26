@@ -21,7 +21,7 @@ export default function GridBackground() {
     const speed = 0.3;
     const cellSize = 60;
     const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     const resize = () => {

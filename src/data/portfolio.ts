@@ -87,6 +87,15 @@ export const experience: ExperienceItem[] = [
 
 export const projects: ProjectItem[] = [
   {
+    title: "Birthdays Hub",
+    description: {
+      en: "A web app to track your friends' birthdays on a calendar so you never miss one. Add contacts and get a clear view of upcoming celebrations.",
+      es: "Una aplicación web para registrar los cumpleaños de tus amigos en un calendario y nunca olvidar ninguno. Agrega contactos y visualiza los próximos cumpleaños.",
+    },
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Express"],
+    live: "https://birthdayshub.com/",
+  },
+  {
     title: "Portfolio Website",
     description: {
       en: "This portfolio website built with React, TypeScript, and Framer Motion. Features i18n, dark mode, and particle animations.",
